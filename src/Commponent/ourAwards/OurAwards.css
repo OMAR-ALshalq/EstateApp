@@ -1,0 +1,136 @@
+.continerOurAwards {
+  width: 100%;
+  background: #122947;
+  height: 80vh;
+  margin-bottom: 90px;
+}
+
+.BoxOurAwards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TextOurAwards p,
+.TextOurAwards h2 {
+  margin: 0;
+}
+
+.TextOurAwards p {
+  text-align: center;
+  color: var(--MainColor);
+  margin: 100px 0 10px 0;
+}
+
+.TextOurAwards h2 {
+  color: white;
+  font-size: 40px;
+  width: 750px;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.RetingOurAwards {
+  display: flex;
+  width: 75%;
+  /* background: red; */
+  justify-content: space-between;
+}
+
+.BoxArrayOurAwards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BoxArrayOurAwards .card .icon,
+.BoxArrayOurAwards .card .reting {
+  font-size: 60px;
+  color: white;
+}
+
+.BoxArrayOurAwards .card .reting {
+  font-weight: bold;
+}
+
+.BoxArrayOurAwards .card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: #223752;
+  border-radius: 10px 40px 10px 40px;
+  -webkit-border-radius: 10px 40px 10px 40px;
+  -moz-border-radius: 10px 40px 10px 40px;
+  -ms-border-radius: 10px 40px 10px 40px;
+  -o-border-radius: 10px 40px 10px 40px;
+}
+
+.BoxArrayOurAwards .card .text {
+  color: var(--Color-Light2);
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .TextOurAwards h2 {
+    font-size: 25px;
+    width: 500px;
+  }
+
+  .RetingOurAwards {
+    display: flex;
+    width: 75%;
+    /* background: red; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+  }
+
+  .BoxArrayOurAwards .card .icon,
+  .BoxArrayOurAwards .card .reting {
+    font-size: 30px;
+    color: white;
+  }
+
+  .BoxArrayOurAwards .card .reting {
+    font-weight: bold;
+  }
+
+  .BoxArrayOurAwards .card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #223752;
+    border-radius: 10px 40px 10px 40px;
+    -webkit-border-radius: 10px 40px 10px 40px;
+    -moz-border-radius: 10px 40px 10px 40px;
+    -ms-border-radius: 10px 40px 10px 40px;
+    -o-border-radius: 10px 40px 10px 40px;
+  }
+  .BoxArrayOurAwards .card .text {
+    color: var(--Color-Light2);
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .TextOurAwards h2 {
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .BoxArrayOurAwards .card .icon,
+  .BoxArrayOurAwards .card .reting {
+    font-size: 20px;
+    color: white;
+  }
+  .RetingOurAwards {
+    flex-direction: column;
+  }
+  .BoxArrayOurAwards .card .text {
+    color: var(--Color-Light2);
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}

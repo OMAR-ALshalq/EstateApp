@@ -1,0 +1,144 @@
+.continerAbout {
+  width: 100%;
+  margin-top: 65px;
+}
+
+.backgrounMain {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../../public/aboutMainImg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.backgrounMain::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #122947b9;
+  position: absolute;
+  top: 0;
+}
+
+.backgrounMain .TextMain {
+  margin: 0 0 0 100px;
+  z-index: 3;
+  width: 85%;
+}
+
+.TextMain p {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  color: white;
+}
+
+.TextMain h3 {
+  margin: 10px 0 0 0;
+  font-size: 50px;
+  color: white;
+}
+
+.BoxTextAbout {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.discribtionAbout {
+  display: flex;
+  /* margin-top: 2000px; */
+  width: 85%;
+  /* flex-direction: column; */
+}
+
+.TextDis {
+  flex: 0 0 50%;
+}
+
+.TextOneDis h2,
+.TextOneDis p {
+  margin: 0;
+}
+
+.TextOneDis h2 {
+  font-size: 50px;
+  color: #122947ec;
+}
+
+.TextOneDis p {
+  font-size: 18px;
+  color: #122947a8;
+}
+
+.TextTow {
+  margin-top: 20px;
+}
+
+.TextDis .TextTow p {
+  line-height: 2;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.TextDis h4 {
+  background: var(--MainColor);
+  padding: 20px 25px;
+  margin-top: 30px !important;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.ImgDis {
+  flex: 1;
+  background-image: url(../../../public/immio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  max-height: 350px;
+}
+
+@media (max-width: 1024px) {
+  .backgrounMain {
+    justify-content: center;
+  }
+  .TextMain {
+    text-align: center;
+    margin: 0 !important;
+  }
+  .TextMain p {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+
+  .TextMain h3 {
+    font-size: 50px;
+    margin: 0 !important;
+  }
+  .discribtionAbout {
+    flex-direction: column;
+  }
+  .ImgDis {
+    flex: none;
+    height: 300px;
+    max-width: none;
+  }
+  .TextDis {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

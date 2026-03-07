@@ -1,0 +1,176 @@
+.continerContact {
+  width: 100%;
+  margin-top: 65px;
+}
+
+.backgrounMainContact {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../../public/pricingImg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.backgrounMainContact::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #122947b9;
+  position: absolute;
+  top: 0;
+}
+
+.backgrounMainContact .TextMain {
+  margin: 0 0 0 100px;
+  z-index: 3;
+  width: 85%;
+}
+
+.TextMain p {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  color: white;
+}
+
+.TextMain h3 {
+  margin: 10px 0 0 0;
+  font-size: 50px;
+  color: white;
+}
+
+.BoxContactAgents {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.BoxContactWebSit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BoxForm {
+  width: 85%;
+  text-align: center;
+  color: #122947ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: green; */
+}
+
+.BoxForm form {
+  /*max-width: 65%;
+  */
+  width: 50%;
+  /*background: red;
+  */
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #122947ec;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: #1229471c;
+}
+
+.BoxForm form label {
+  text-align: left;
+  /* padding: 20px; */
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+}
+
+.BoxForm form input {
+  padding: 10px 0 10px 10px;
+  border: 2px solid #122947ec;
+
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.BoxForm form input:focus,
+.BoxForm form textarea:focus {
+  outline: none;
+}
+
+.BoxForm form textarea {
+  height: 150px;
+  padding: 10px 0 0 10px;
+  border: 2px solid #122947ec;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.BoxForm form button {
+  width: 23%;
+  padding: 10px 10px;
+  margin-top: 20px;
+  background: #122947ec;
+  border: 2px solid transparent;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Massage {
+  display: flex;
+  /* background: green; */
+  align-items: center;
+}
+
+.Massage .textMassage {
+  font-size: 25px;
+  margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  .BoxForm form {
+    width: 100%;
+  }
+  .BoxForm form button {
+    width: 40%;
+  } 
+}
+
+@media (max-width: 1024px) {
+  .backgrounMainContact {
+    justify-content: center;
+  }
+  .TextMain {
+    text-align: center;
+    margin: 0 !important;
+  }
+  .TextMain p {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+
+  .TextMain h3 {
+    font-size: 50px;
+    margin: 0 !important;
+  }
+  .BoxForm form {
+    width: 85%;
+  }
+}

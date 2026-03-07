@@ -1,0 +1,65 @@
+
+.continerExploreByLocation{
+  margin-bottom: 90px;
+}
+.BoxMainExploreByLocation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.BoxMapArrayCity {
+  flex: 1;
+}
+.BoxMapArrayCity .img {
+  width: 350px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.BoxMapArrayCity .img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.39);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translate(20px, 20px);
+  -webkit-transform: translate(20px, 20px);
+  -moz-transform: translate(20px, 20px);
+  -ms-transform: translate(20px, 20px);
+  -o-transform: translate(20px, 20px);
+}
+
+.BoxMapArrayCity .img .title {
+  color: white;
+  font-size: 25px;
+  z-index: 3;
+}
+
+.BoxMapArrayCity .img .dis {
+  display: flex;
+  z-index: 3;
+  gap: 10px;
+  font-size: 20px;
+  color: rgba(238, 235, 235, 0.616);
+}

@@ -1,0 +1,156 @@
+.BoxMainMap {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.Card {
+  flex: 1;
+  /* background: red; */
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0px 0px 21px 2px rgb(175, 173, 173);
+  position: relative;
+}
+
+.BestCard {
+  display: flex;
+  justify-content: center;
+}
+.Card h3:nth-child(1) {
+  color: white;
+  background: rgb(252, 143, 2);
+  padding: 20px;
+  width: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.NameCard {
+  font-size: 30px;
+  margin: 20px 0 0 0 ;
+}
+.Card .TextCard {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.BoxPrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.BoxPrice h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.BoxPrice span {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 37%;
+  bottom: 0;
+}
+
+.CardOption ul {
+  list-style: none;
+}
+
+.CardOption ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CheckTrue {
+  display: flex;
+  color: green;
+  background: rgba(0, 128, 0, 0.322);
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+.CheckClos {
+  display: flex;
+  color: red;
+  background: rgba(255, 0, 0, 0.295);
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.StartCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.StartCard p {
+  background: transparent;
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 200px;
+  border: 3px solid rgba(0, 128, 0, 0.315);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.StartCard p:hover {
+    box-shadow: 0px 6px 17px -5px var(--MainColor);
+
+}
+
+@media (max-width:1024px) {
+  .BoxMainMap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Card {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .CardOption ul {
+    margin-left: 50px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+}
+
+@media (max-width:600px) {
+  .Card {
+    width: 350px;
+  }
+
+  .CardOption ul {
+    margin-left: 30px;
+  }
+}

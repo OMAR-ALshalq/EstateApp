@@ -1,0 +1,208 @@
+.continerNavBar {
+  background: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.BoxNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.MainTags .BoxUl ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.MainTags .BoxUl ul li {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.MainTags .BoxUl ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.MainTags .BoxUl ul li:hover {
+  color: var(--MainColor);
+  cursor: pointer;
+}
+
+.SignIn .BoxSignIn {
+  display: flex;
+  align-items: center;
+}
+.SignIn .BoxSignIn button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  background: var(--MainColor);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  /* display: none; */
+}
+
+.SignIn .BoxSignIn button:hover {
+  box-shadow: 0px 6px 17px -5px var(--MainColor);
+  cursor: pointer;
+}
+
+.SignIn .BoxSignIn .iconNavBarButtoon {
+  font-size: 18px;
+  /* font-weight: bolder; */
+  /* font-weight: 900; */
+  /* color: red; */
+  font-weight: bold;
+}
+
+.tagsTow {
+  position: fixed; /* تجعلها فوق المحتوى */
+  top: 85px; /* تبدأ تحت الـ Navbar مثلاً */
+  left: 0; /* تظهر من جهة اليمين */
+  width: 50%;
+  /* height: 100vh; */
+  /* لا تأخذ طول الشاشة بالكامل */
+  background: var(--MainColor);
+  overflow: hidden;
+  z-index: 1000; /* فوق بقية العناصر */
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 65px;
+  /* height: 30vh; */
+}
+.DotsIcon {
+  visibility: hidden;
+}
+.divClosTags {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-left: -20px;
+  color: white;
+}
+.Closeicon {
+  font-size: 20px;
+}
+
+/* أنميشن الفتح */
+.animateShow {
+  animation: ShowTags 1s ease forwards;
+  -webkit-animation: ShowTags 1s ease forwards;
+}
+
+/* أنميشن الإغلاق */
+.animateHide {
+  animation: HiddinTags 1s ease forwards;
+  -webkit-animation: HiddinTags 1s ease forwards;
+}
+
+@keyframes ShowTags {
+  from {
+    transform: translatey(-380px);
+    -webkit-transform: translatey(-380px);
+    -moz-transform: translatey(-380px);
+    -ms-transform: translatey(-380px);
+    -o-transform: translatey(-380px);
+  }
+  to {
+    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
+  }
+}
+
+@keyframes HiddinTags {
+  from {
+    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-380px);
+    -webkit-transform: translatey(-380px);
+    -moz-transform: translatey(-380px);
+    -ms-transform: translatey(-380px);
+    -o-transform: translatey(-380px);
+  }
+}
+
+.tagsTow ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagsTow ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding: 10px !important; */
+}
+
+.tagsTow ul li a {
+  text-decoration: none;
+  color: white;
+}
+/*  */
+
+/* media */
+@media (max-width: 1024px) {
+  .MainTags .BoxUl ul {
+    display: none;
+  }
+  .SignIn .BoxSignIn button {
+    display: none;
+  }
+  .DotsIcon {
+    visibility: visible;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagsTow {
+    margin-left: 30px;
+    width: 76%;
+  }
+}
+/* media */

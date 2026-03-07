@@ -1,0 +1,55 @@
+.continerFeaturedPropertyTypes {
+  margin-bottom: 100px;
+}
+
+.BoxMap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.BoxMap .card {
+  /*background: red;
+  */flex: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+  box-shadow: 0px 0px 21px 2px rgb(175, 173, 173);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.BoxMap .card img {
+  width: 70px;
+  margin:20px;
+}
+
+.BoxMap .card h3,
+.BoxMap .card p {
+  margin: 0;
+}
+
+.BoxMap p {
+  color: var(--Color-Light2);
+  margin-top: 10px !important;
+}
+
+
+@media(max-width:1024px) {
+  .BoxMap {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:600px) {
+  .BoxMap .card h3 {
+    font-size: 15px;
+  }
+}

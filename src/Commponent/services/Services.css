@@ -1,0 +1,67 @@
+.continerservices {
+  width: 100%;
+  margin-top: 65px;
+}
+
+.backgrounMainservices {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../../public/servicesImg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.backgrounMainservices::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #122947b9;
+  position: absolute;
+  top: 0;
+}
+
+.backgrounMainservices .TextMain {
+  margin: 0 0 0 100px;
+  z-index: 3;
+  width: 85%;
+}
+
+.TextMain p {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  color: white;
+}
+
+.TextMain h3 {
+  margin: 10px 0 0 0;
+  font-size: 50px;
+  color: white;
+}
+
+.BoxServices {
+  margin-top: 100px;
+}
+
+
+@media (max-width: 1024px) {
+  .backgrounMainservices {
+    justify-content: center;
+  }
+  .TextMain {
+    text-align: center;
+    margin: 0 !important;
+  }
+  .TextMain p {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+
+  .TextMain h3 {
+    font-size: 50px;
+    margin: 0 !important;
+  }
+}

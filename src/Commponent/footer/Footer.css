@@ -1,0 +1,172 @@
+.continerFooter {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.BoxOne {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--MainColor);
+}
+
+.TextOne {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.TextOne h1 {
+  margin: 30px 0 0 0 ;
+  font-size: 50px;
+}
+
+.TextBoxOne p {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+}
+
+.buttonBoxOne p {
+  color: var(--MainColor);
+  background: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.BoxTow {
+  width: 100%;
+  background: #122947;
+  display: flex;
+  justify-content: center;
+}
+
+.MainSiction {
+  width: 85%;
+  display: flex;
+  /* gap: 30px; */
+}
+.SectionOne{
+  flex: 50%;
+}
+
+.SectionOne img{
+  margin-top: 20px;
+  width: 200px;
+}
+
+.SectionOne h2 {
+  color: white;
+}
+
+.SectionOne p {
+  color: rgb(119, 116, 116);
+}
+
+.SectionOne .input {
+  display: flex;
+
+}
+.SectionOne .input input{
+  width: 60%;
+  padding: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+.SectionOne .input button{
+  padding: 12px 20px;
+  background: var(--MainColor);
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.SectionOne .input button:hover {
+    box-shadow: 0px 6px 17px -5px var(--MainColor);
+
+}
+.SectionTow {
+  display: flex;
+  margin-top: 20px;
+}
+
+.ColumnOne h2,
+.ColumnTow h2,
+.ColumnThree h2{
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+  font-weight: 300;
+}
+
+.SectionTow ul {
+  list-style: none;
+  line-height: 2.5;
+  color: rgb(119, 116, 116);
+}
+
+
+.BoxMainTow {
+  background: #122947;
+}
+.BoxMainTow hr {
+  border: 1px solid rgb(139, 139, 139);
+}
+
+.End{
+  width: 100%;
+  background: #122947;
+  /* text-align: center; */
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.End h3 {
+  margin: 10px;
+  color: white;
+}
+
+.End span {
+  color: var(--MainColor);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media (max-width:1024px) {
+  .TextOne {
+    flex-direction: column;
+  }
+  .MainSiction {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+@media (max-width:600px) {
+  .SectionTow {
+    flex-wrap: wrap;
+  }
+}
