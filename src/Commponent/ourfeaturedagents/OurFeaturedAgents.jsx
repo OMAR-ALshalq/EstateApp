@@ -14,7 +14,7 @@ const ArrayCustomer = [
   {
     id: 1,
     countListings: "50 Listings",
-    img: "../../../public/images/customer/team-1.jpg",
+    img: "/images/customer/team-1.jpg",
     locattion: "Liverpool, Canada",
     nameCustomer: "Sargam S. Singh",
     linkFacebook: "",
@@ -25,7 +25,7 @@ const ArrayCustomer = [
   {
     id: 2,
     countListings: "70 Listings",
-    img: "../../../public/images/customer/team-2.jpg",
+    img: "/images/customer/team-2.jpg",
     locattion: "Montreal, Canada",
     nameCustomer: "Harijeet M. Siller",
     linkFacebook: "",
@@ -36,7 +36,7 @@ const ArrayCustomer = [
   {
     id: 3,
     countListings: "80 Listings",
-    img: "../../../public/images/customer/team-3.jpg",
+    img: "/images/customer/team-3.jpg",
     locattion: "Denever, USA",
     nameCustomer: "Anna K. Young",
     linkFacebook: "",
@@ -47,7 +47,7 @@ const ArrayCustomer = [
   {
     id: 4,
     countListings: "51 Listings",
-    img: "../../../public/images/customer/team-4.jpg",
+    img: "/images/customer/team-4.jpg",
     locattion: "2272 Briarwood Drive",
     nameCustomer: "Michael P. Grimaldo",
     linkFacebook: "",
@@ -58,7 +58,7 @@ const ArrayCustomer = [
   {
     id: 5,
     countListings: "42 Listings",
-    img: "../../../public/images/customer/team-5.jpg",
+    img: "/images/customer/team-5.jpg",
     locattion: "2272 Briarwood Drive",
     nameCustomer: "Michael P. Grimaldo",
     linkFacebook: "",
@@ -69,7 +69,7 @@ const ArrayCustomer = [
   {
     id: 6,
     countListings: "38 Listings",
-    img: "../../../public/images/customer/team-5.jpg",
+    img: "/images/customer/team-5.jpg",
     locattion: "Liverpool, Canada",
     nameCustomer: "Sargam S. Singh",
     linkFacebook: "",
