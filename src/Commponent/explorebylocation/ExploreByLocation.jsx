@@ -3,7 +3,7 @@ import "./ExploreByLocation.css";
 const ArrayCity = [
   {
     id: 1,
-    img: "../../../public/images/location/city-1.png",
+    img: "/images/location/city-1.png",
     title: "New Orleans, Louisiana",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
@@ -11,7 +11,7 @@ const ArrayCity = [
   },
   {
     id: 2,
-    img: "../../../public/images/location/city-2.png",
+    img: "/images/location/city-2.png",
     title: "Jerrsy, United State",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
@@ -19,7 +19,7 @@ const ArrayCity = [
   },
   {
     id: 3,
-    img: "../../../public/images/location/city-3.png",
+    img: "/images/location/city-3.png",
     title: "Liverpool, London",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
@@ -27,7 +27,7 @@ const ArrayCity = [
   },
   {
     id: 4,
-    img: "../../../public/images/location/city-4.png",
+    img: "/images/location/city-4.png",
     title: "NewYork, United States",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
@@ -35,7 +35,7 @@ const ArrayCity = [
   },
   {
     id: 5,
-    img: "../../../public/images/location/city-5.png",
+    img: "/images/location/city-5.png",
     title: "Montreal, Canada",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
@@ -43,7 +43,7 @@ const ArrayCity = [
   },
   {
     id: 6,
-    img: "../../../public/images/location/city-6.png",
+    img: "/images/location/city-6.png",
     title: "California, USA",
     countVillas: "12 Villas",
     countOffices: "07 Offices",
